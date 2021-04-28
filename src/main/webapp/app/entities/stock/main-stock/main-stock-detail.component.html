@@ -1,0 +1,38 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="mainStock">
+            <h2><span jhiTranslate="gatewayApp.stockMainStock.detail.title">Main Stock</span> {{ mainStock.id }}</h2>
+
+            <hr>
+
+            <jhi-alert-error></jhi-alert-error>
+
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="gatewayApp.stockMainStock.name">Name</span></dt>
+                <dd>
+                    <span>{{ mainStock.name }}</span>
+                </dd>
+                <dt><span jhiTranslate="gatewayApp.stockMainStock.description">Description</span></dt>
+                <dd>
+                    <span>{{ mainStock.description }}</span>
+                </dd>
+                <dt><span jhiTranslate="gatewayApp.stockMainStock.type">Type</span></dt>
+                <dd>
+                    <span>{{ mainStock.type }}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/main-stock', mainStock.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

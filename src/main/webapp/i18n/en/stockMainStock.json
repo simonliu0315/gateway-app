@@ -1,0 +1,28 @@
+{
+  "gatewayApp": {
+    "stockMainStock": {
+      "home": {
+        "title": "Main Stocks",
+        "createLabel": "Create a new Main Stock",
+        "createOrEditLabel": "Create or edit a Main Stock",
+        "notFound": "No Main Stocks found"
+      },
+      "delete": {
+        "question": "Are you sure you want to delete Main Stock {{ id }}?"
+      },
+      "detail": {
+        "title": "Main Stock"
+      },
+      "name": "Name",
+      "description": "Description",
+      "type": "Type"
+    }
+  },
+  "stockApp": {
+    "stockMainStock": {
+      "created": "A new Main Stock is created with identifier {{ param }}",
+      "updated": "A Main Stock is updated with identifier {{ param }}",
+      "deleted": "A Main Stock is deleted with identifier {{ param }}"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "gatewayApp": {
+    "dealerappDealer": {
+      "home": {
+        "title": "Dealers",
+        "createLabel": "建立一筆新的 Dealer",
+        "createOrEditLabel": "建立或編輯 Dealer",
+        "notFound": "No Dealers found"
+      },
+      "delete": {
+        "question": "您確定要刪除 Dealer {{ id }} 嗎?"
+      },
+      "detail": {
+        "title": "Dealer"
+      },
+      "make2": "Make 2",
+      "brand2": "Brand 2"
+    }
+  },
+  "dealerappApp": {
+    "dealerappDealer": {
+      "created": "新的 Dealer 建立成功，識別碼為 {{ param }}",
+      "updated": "識別碼為 {{ param }} 的 Dealer 更新成功",
+      "deleted": "識別碼為 {{ param }} 的 Dealer 刪除成功"
+    }
+  }
+}
